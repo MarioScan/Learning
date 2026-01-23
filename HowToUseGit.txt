@@ -4,7 +4,12 @@
 [WARNING!] If you ignore this, you will work on a possible old version of the repertory!
 
 ## See the logs of every commit done
-git log --oneline (shows compacted history of the commitments)
+1. git log --oneline (shows compacted history of the commitments)
+[Alternative] git log --oneline --graph --decorate --all (also shows the structure of each branch of the repo)
+
+## See any update made after a commit (any edit on a already existing file made without commiting)
+1. git diff (any edit row per row!) 
+[Warning]: git diff only shows updates on pre-existing files; git status also shows new files.
 
 ## Updating the Repertory from Git to Github
 1. go to the Git directory repo
@@ -16,6 +21,17 @@ git log --oneline (shows compacted history of the commitments)
 1. go to the Git directory repo
 2. git status
 
-##
+### Simplified everyday routine:
+1. repo directory 
+2. git pull 
+3. git log 
+(After working on the repo...)
+4. git add . 
+5. git commit -m "<comment>"
+6. git push (updates are now available on Github!)  
+
+
+
+
 
 
