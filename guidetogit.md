@@ -15,7 +15,7 @@ git log --oneline --graph --decorate --all (also shows the structure of each bra
 ## Updating the Repertory from Git to Github
 1. go to the Git directory repo
 2. git add . (to add all the new updates on the repo, ex. edits, new files/folders)
-3. git commit -m "<comment the update>" 
+3. git commit -m "-comment the update-" 
 4. git push (to synchronize it to github)
 
 ## Status of the files
@@ -27,7 +27,7 @@ git log --oneline --graph --decorate --all (also shows the structure of each bra
 
 ## Cancel a file 
 1. git rm <name>
-2. commit -m "comment"
+2. commit -m "-comment-"
 3. git push
 
 ### Simplified everyday routine:
@@ -36,7 +36,7 @@ git log --oneline --graph --decorate --all (also shows the structure of each bra
 3. git log 
 (After working on the repo...)
 4. git add . 
-5. git commit -m "<comment>"
+5. git commit -m "-comment-"
 6. git push (updates are now available on Github!)  
 
 
