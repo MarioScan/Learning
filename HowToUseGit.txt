@@ -1,0 +1,21 @@
+## When working in a team, proceed before working:
+1. go to the Git directory repo
+2. git pull (downloads all new activies from the Github repo and puts them with the local git repo)
+[WARNING!] If you ignore this, you will work on a possible old version of the repertory!
+
+## See the logs of every commit done
+git log --oneline (shows compacted history of the commitments)
+
+## Updating the Repertory from Git to Github
+1. go to the Git directory repo
+2. git add . (to add all the new updates on the repo, ex. edits, new files/folders)
+3. git commit -m "<comment the update>" 
+4. git push (to synchronize it to github)
+
+## Status of the files
+1. go to the Git directory repo
+2. git status
+
+##
+
+
