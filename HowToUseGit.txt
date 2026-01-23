@@ -25,6 +25,11 @@ git log --oneline --graph --decorate --all (also shows the structure of each bra
 ## Cancel previous commitment: 
 1. git reset --hard <codeCommitment> (you can see it from git log)
 
+## Cancel a file 
+1. git rm <name>
+2. commit -m "comment"
+3. git push
+
 ### Simplified everyday routine:
 1. repo directory 
 2. git pull 
