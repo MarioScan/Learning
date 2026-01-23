@@ -4,8 +4,9 @@
 [WARNING!] If you ignore this, you will work on a possible old version of the repertory!
 
 ## See the logs of every commit done
-1. git log --oneline (shows compacted history of the commitments)
-[Alternative] git log --oneline --graph --decorate --all (also shows the structure of each branch of the repo)
+git log (shows commitments done, when and from who)
+git log --oneline (shows compacted history of the commitments)
+git log --oneline --graph --decorate --all (also shows the structure of each branch of the repo)
 
 ## See any update made after a commit (any edit on a already existing file made without commiting)
 1. git diff (any edit row per row!) 
