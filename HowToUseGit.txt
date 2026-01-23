@@ -22,6 +22,9 @@ git log --oneline --graph --decorate --all (also shows the structure of each bra
 1. go to the Git directory repo
 2. git status
 
+## Cancel previous commitment: 
+1. git reset --hard <codeCommitment> (you can see it from git log)
+
 ### Simplified everyday routine:
 1. repo directory 
 2. git pull 
