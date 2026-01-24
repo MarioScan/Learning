@@ -1,0 +1,8 @@
+1001 Mario Rossi 24.5 2500 4
+1123 Luigi Verdi 23.6 
+1453 Luca Neri 28.9 1000 10 
+1004 Gianni Gialli 30 600 3
+1045 Emma Marroni 20.1 
+1034 Gianna Giannini 25.3 4000 24
+1032 Gianni Rossi 29.9 700 1
+1980 Mauro Mammella 30 8000 36

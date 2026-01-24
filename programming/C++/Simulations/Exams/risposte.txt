@@ -1,0 +1,341 @@
+1. La funzione f(n) = n² + n appartiene a O(n²)?
+Si perché abbiamo come complessità più alta: n^2 
+
+2. La funzione f(n) = 0.5n² + 3n appartiene a O(n)?
+No, perché abbiamo come complessità più alta: n^2 > n 
+
+3. La funzione f(n) = 4n² + 3log(n) appartiene a O(n)?
+No, perché abbiamo come complessità più alta: n^2 > n 
+
+4. La funzione f(n) = n log(n) appartiene a O(n²)?
+Si perché n log(n) < O(n^2)
+
+5. La funzione f(n) = 5 (costante per ogni n) appartiene a O(n)?
+Si perché è proprio O(n) = O(n)
+
+6. La funzione f(n) = 5 (costante per ogni n) appartiene a O(1)?
+Si perché O(1) è proprio la funzione costante quindi include f(n) = 5 
+
+7. Una funzione appartenente a O(n²) appartiene anche a O(n log(n))?
+No, O(n^2) > o(n log(n))
+
+8. Una funzione appartenente a O(n) appartiene anche a O(n log(n))?
+Si, perché O(n) < O(n log(n))
+
+9. Se h(n) e k(n) appartengono entrambe a O(g(n)), allora la funzione f(n) = 2h(n) + 2k(n) appartiene a O(g(n))?
+Apparterrebbe a (O(2(g(n)))) ? O è vera? 
+
+10. La funzione f(n) = log(n) appartiene a O(2^n)?
+Si perchè log(n) è minore di O(2^n) -> es. log2(64) = 6 -> 2^64 è molto più alto... (nota: 2^6 = 64)
+
+11. Una funzione appartenente a O(log n) appartiene anche a O(n)?
+Si perché log n è minore di O(n) 
+
+12. Una funzione appartenente a O(n²) appartiene anche a O(n³)?
+Esattamente, perché  O(n^2) < O(n^3)
+
+13. Se la funzione f(n) ∈ O(g(n)), allora è sempre vero che g(n) ∈ O(f(n))?
+No, solo nel caso in cui f(n) = O(g(n)) 
+
+14. Se la funzione f(n) ∈ O(g(n)), allora necessariamente g(n) ∈ O(f(n))?
+No, solo nel caso in cui f(n) = O(g(n)), cioé che si appartengono l'un l'altro 
+
+15. Se h(n) e k(n) sono due funzioni appartenenti a O(g(n)), allora la funzione f(n) = h(n) + k(n) appartiene anch’essa a O(g(n))?
+Esattamente, somma e moltiplicazione per costanti non cambiano ordine.
+
+16. La funzione f(n) = n² + 3n appartiene a O(n³)?
+Si, si prende il dominante n^2 che è comunque minore di n^3
+
+17. O(2³) = O(1)?
+Si perché sono due valori costanti.
+
+18. La funzione f(n) = 1 (costante per tutti gli n) appartiene a O(n)?
+Si, O(1) è la complessità di costanza ed è minore di tutti quindi appartiene a O(n) 
+
+19. La funzione f(n) = 2n + 3n² appartiene a O(n)?
+No, il dominante n^2 è maggiore di n
+
+20. La funzione f(n) = 2n + 3n² appartiene a O(n²)?
+Si dominante n^2 
+
+21. Se f(n) = 4n² + 3n, a quale classe di complessità appartiene?
+appartiene alla classe della complessità dominante: n^2
+
+22. Se f(n) = n log(n) + 5n, a quale classe di complessità appartiene?
+appartengono alla classe dominante: n log(n) 
+
+23. Se f(n) = n² + 3n log(n), a quale classe di complessità appartiene?
+appartengono alla classe dominante: n^2
+
+24. Se f(n) = 2^n + 3n, a quale classe di complessità appartiene?
+appartengono alla classe dominante: 2^n
+
+25. Se f(n) = n³ + log(n), a quale classe di complessità appartiene?
+appartengono alla classe dominante: n^3
+
+26. Quale delle seguenti funzioni cresce più velocemente?
+    a) n log(n)
+    b) n²
+    c) n³ <----
+    d) log(n)
+
+27. Se f(n) ∈ O(n log(n)) e g(n) ∈ O(n²), allora f(n) + g(n) ∈ O(n²)?
+esattamente perché O(n^2) è la complessità dominante.
+
+28. Se f(n) ∈ O(n) e g(n) ∈ O(log(n)), allora f(n) * g(n) ∈ O(n log(n))?
+Esattamente, stiamo moltiplicando le due complessità ottenendo questo risultato
+
+29. Se f(n) ∈ O(n²) e g(n) ∈ O(n³), allora f(n) + g(n) ∈ O(n³)?
+esatto perché n^3 è la complessità dominante.
+
+30. Se f(n) ∈ O(n log(n)), allora f(n) ∈ O(n²)?
+esatto perché n^2 è la complessità dominante. 
+
+
+----------------------------------------------------------------------------------------------
+Nuovi esercizi con ChatGPT: 
+
+1. La funzione f(n) = n log²(n) appartiene a O(n log(n))?
+No, n log^2(n) è più grande di O(n log(n))
+
+2. La funzione f(n) = log(n!) appartiene a O(n log(n))?
+es.
+    n = 5 -> !5 = 5x4x3x2x1 = 20 x 6 = 120, log(120) = circa 7, 
+    5 log (5) = circa 10
+Si, O(n log(n)) è maggiore.
+
+3. La funzione f(n) = √n + log(n) appartiene a O(√n)?
+es. 
+    n = 9
+    √n = √9 = 3
+    log(9) > 3
+    n = 64 -> √64 = 8
+    log(64) = 6
+Si, per quanto √n sia simile a log(n) con piccoli numeri, √n è più grande. 
+
+4. La funzione f(n) = n / log(n) appartiene a O(n)?
+Si, perché il risultato sarebbe minore di O(n)
+
+5. La funzione f(n) = log(log(n)) appartiene a O(log(n))?
+Si, O(log(n)) è più grande.
+
+6. Se f(n) = n³ log(n) + n² log²(n), qual è la sua classe di complessità?
+Ovviamente, n³ log(n)
+
+7. Se f(n) = n² + n log(n), qual è la sua classe di complessità?
+Classe di complessità n^2
+
+8. Se f(n) = log(n) + n! + 3^n, qual è la sua classe di complessità?
+es. 
+    log(5) > 2
+    5! = 120
+    3^5 = 27x9 = 243
+    ma...
+    10! = 3.628.800
+    3^10 = 59.049
+Quindi n! è la classe di complessità
+
+9. Se f(n) = (2n + 3)², qual è la sua classe di complessità?
+Classe n^2, gli altri valori sono superflui
+
+10. Se f(n) = 3^n + n², allora f(n) ∈ O(n²)?
+es. 
+    n = 9
+    3^9 = 19.683
+    9^2 = 81
+Allora no, 3^n è molto più grande di n^2. Quindi non appartiene a O(n^2), ma viceversa.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Secondo blocco esercizi con ChatGPT
+
+11. La funzione f(n) = n log(n²) appartiene a O(n log(n))?
+es.
+    n log(n^2) = n 2log(n) = n log(n)
+Quindi si.
+
+12. La funzione f(n) = log₂(n³ + 1) appartiene a O(log(n))?
+es. 
+    log₂(n³ + 1) = 3log₂(n) che è solo una costante in più
+Quindi si, log₂(n³ + 1) appartiene a O(log(n))
+
+13. La funzione f(n) = (n + log(n))² appartiene a O(n²)?
+es.
+    n = 32
+    (n + log(n))^2 = (32 + 5)^2 = 37^2 
+    37^2 > 32^2  
+    OK, ma:
+        🔢 Ora confrontiamo i numeri come hai fatto tu:
+        Hai preso n = 32:
+
+        (n + log(n))² = (32 + 5)^2 = 37² = 1369
+        n² = 32² = 1024
+        Sì, è maggiore. Ma non importa.
+
+        La domanda non è se f(n) sia < n²,
+        ma se esiste una costante C e un valore n₀ per cui:
+
+        (n + log(n))² ≤ C * n²  ∀ n ≥ n₀
+        E questo è vero, perché log(n) cresce molto lentamente e quindi:
+
+        (n + log(n))² ≈ n² + piccole correzioni
+        Anche se 37² > 32², questa differenza è costante nel rapporto:
+
+        lim (n → ∞) [(n + log(n))² / n²] = 1
+        📌 Conclusione
+        Anche se (n + log(n))² > n², questo non vuol dire che la funzione non sia in O(n²).
+        Al contrario, è esattamente O(n²), perché:
+
+        log(n) è trascurabile rispetto a n
+
+        quindi (n + log(n))² ≈ n²
+
+        ✅ Risposta finale: Sì, f(n) ∈ O(n²)
+
+14. La funzione f(n) = 2^n + n log(n) appartiene a O(2^n)?
+es.
+    n = 9:
+    2^9 = 512
+    9 log(9) = 9x3 = 27
+Si, 2^n è la classe dominante, quindi f(n) appartiene a O(2^n)
+
+15. La funzione f(n) = n! + 3^n appartiene a O(n!)?
+es. 
+    n=9:
+    9! = 9x8x7x...x1 = 362.880
+    3^9 = 19.683
+Si, n! è maggiore quindi f(n) appartiene a O(n!) 
+
+16. Se f(n) = n log(n) + n², qual è la classe di complessità?
+La classe di complessità è n^2 
+
+17. Se f(n) = log(n!) + n², qual è la classe di complessità?
+n^2 è la classe di complessità
+
+18. La funzione f(n) = log(n)^3 appartiene a O(log(n))?
+no, log(n)^3 è maggiore, quindi è il contrario.
+
+19. La funzione f(n) = n^(1.5) + n log(n) appartiene a O(n^(1.5))?
+es.
+    n=8;
+    8^1.5 = 22,627
+    8 log(8) = 8 x 3 = 24
+    Si, esponenziale vale più di logaritmica
+
+20. Se f(n) = n log(n) e g(n) = n², allora f(n) ∈ O(g(n))?
+Si perché n^2 è più grande di n log(n)
+
+21. Se f(n) = (log(n))^5, allora f(n) ∈ O(log(n))?
+No, log(n)^5 è più grande.
+
+22. Se f(n) = n log(n²), allora f(n) ∈ O(n log(n))?
+Si, è come scrivere n 2log(n) 2 è solo una costante quindi vale n log(n) che appartiene a n log(n)
+
+23. Se f(n) = (n + log(n))³, a quale classe di complessità appartiene?
+❌ appartiene a log(n)^3 NO --> 
+APPARTIENE A n^3
+
+24. Se f(n) = 2^n + n!, a quale classe appartiene?
+es.
+    2^5 = 4 x 4 x 2 = 32
+    5! = 120
+Appartiene a n!
+
+25. Se f(n) = n log(n) + n², f(n) ∈ O(n²)?
+Si.
+
+26. Se f(n) = n² / log(n), f(n) ∈ O(n²)?
+Si, il risultato è minore di O(n^2)
+
+27. Se f(n) = log(n)^log(n), allora f(n) ∈ O(n)?
+es.
+    log(64)^log(64) = 6^6 = 46.656
+    O(64) = 64
+Si, n è più grande
+
+
+28. Se f(n) = n^log(n), allora f(n) ∈ O(2^n)?
+es.
+    n=8:
+        2^n = 16x16 = 256
+        16^4 è sicuramente più grande
+❌ No, n^log(n) è molto più grande
+--> Stiamo lavorando su grandi numeri: 2^n cresce molto più in fretta.
+Quindi SI APPARTIENE.
+
+29. Se f(n) = 2^n + 3^n, allora f(n) ∈ O(3^n)?
+Si, perché 3^n è maggiore
+
+30. Se f(n) = 2^√n, allora f(n) ∈ O(n)?
+es.
+    n = 27:
+        2^3 < 27
+ No, 2^√n cresce più di qualunque polinomio frazionario → quindi non appartiene a O(n)
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+La funzione f(n) = n² + √n appartiene a O(n²)?
+Si
+
+La funzione f(n) = n log(n²) appartiene a O(n log(n))?
+si
+
+La funzione f(n) = (n log(n))² appartiene a O(n² log(n))?
+vediamo:
+    (n^2 log(n)^2 ) > (n^2 log(n))
+Quindi NO.
+
+La funzione f(n) = log(n) + log²(n) appartiene a O(log²(n))?
+Si
+
+La funzione f(n) = 3^n + 2^n appartiene a O(3^n)?
+si
+
+La funzione f(n) = n! + n³ appartiene a O(n!)?
+Si
+
+La funzione f(n) = n² / log(n) appartiene a O(n²)?
+si
+
+La funzione f(n) = √n + log(n)^2 appartiene a O(√n)?
+Si, √n = n^(0.5) è sempre maggiore di qualsiasi esponenziale
+
+La funzione f(n) = n^(1.1) + n log(n) appartiene a O(n^(1.1))?
+Si
+
+La funzione f(n) = n³ log(n) + n² appartiene a O(n³ log(n))?
+Si
+
+Se f(n) = n log(n), allora f(n) ∈ O(n²)?
+Esatto
+
+Se f(n) = log(n)^2, allora f(n) ∈ O(n)?
+Si
+
+Se f(n) = n^log(n), allora f(n) ∈ O(2^n)?
+Si
+
+Se f(n) = n + log(n), allora f(n) ∈ O(n)?
+si
+
+Se f(n) = log(n)^3 + log(n), allora f(n) ∈ O(log(n)^3)?
+esatto
+
+Se f(n) = (n + log(n))^2, allora f(n) ∈ O(n²)?
+si
+
+Se f(n) = n^1.5 + log(n)^5, allora f(n) ∈ O(n^1.5)?
+si
+
+Se f(n) = 2^n + n^3, allora f(n) ∈ O(2^n)?
+si, 2^n è molto più grande
+
+Se f(n) = log(n)^log(n), allora f(n) ∈ O(n)?
+esatto, l'unico logaritmico che batte O(n) è O(n log(n))
+
+Se f(n) = (n^2 + 1)^2, allora f(n) ∈ O(n^4)?
+si (n^2)^2 equivale proprio a n^4
+

@@ -1,0 +1,6 @@
+Mario Rossi 24.4 
+Luigi Verdi 23.9 400 1
+Melo Mamelo 20 100 2 
+Gianni Gialli 29 1500 10
+Emma Marroni 20 1000 5
+Nino Melo 24

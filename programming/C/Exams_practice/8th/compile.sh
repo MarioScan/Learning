@@ -1,0 +1,1 @@
+gcc -Wall -g main.c functions.c -o a.out

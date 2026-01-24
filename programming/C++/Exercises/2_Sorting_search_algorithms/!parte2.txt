@@ -1,0 +1,162 @@
+<1> Teoria forte:
+
+Complessità (Big O, caso peggiore, medio, migliore)
+
+Ricorsione (semplice, di coda, doppia)
+
+Confronto ricorsione vs iterazione
+
+<2> Algoritmi:
+
+Ordinamenti base: Bubble, Selection, Insertion
+
+Ordinamenti ricorsivi: MergeSort, QuickSort
+
+Ricerca: Lineare, Binaria (iterativa e ricorsiva)
+
+
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->
+
+                                 ----------------------------------
+                                 |                                |
+                                 | Complessità Asintotica (Big-O) |
+                                 |                                |
+                                 ----------------------------------
+🎯 Obiettivo:
+Capire quanto “costa” in tempo o spazio un algoritmo.
+
+    Simbolo	   |        Nome	        |   Esempio tipico                  | Cosa fa in genere
+_______________________________________________________________________________________________________________________
+    O(1)   	   |    Tempo costante	    |   accesso a un array: arr[5]      | singola istruzione                        --> es. se ho 100 celle array, voglio accedere alla cella 5, ho una sola istruzione, tempo costante. | es. somma = a+ b; è una operazione con tempo costante.  
+    O(log n)   |    Logaritmico	        |   ricerca binaria (binarySearch)  | divide per 2 ogni volta                   --> Ricerca su array ordinati --> es. con la ricerca binaria, dimezzo la ricerca ad ogni iterazione, quindi se ho 1024 celle da cercare, la troverò alla istruzione 10 --> log2(1024) = 10. 
+    O(n)	   |    Lineare	ciclo       |   ciclo for                       | visita ogni elemento 1 volta              --> Ogni elemento in input viene visitato una sola volta. --> es. esempio ciclo for che scorre un array.
+    O(n log n) |    Quasi-lineare	    |   merge sort, quicksort, heapsort | divide (log n) e riordina (n)             --> Algoritmi di ordinamento efficienti, usa efficienza logaritmica con quantità di dati n.
+    O(n²)	   |    Quadratico	        |   bubble sort, selection          | confronta ogni elemento con tutti         --> Per ogni elemento scorre tutti gli altri.
+    O(2ⁿ)	   |    Esponenziale	    |   (es. ricorsione Fibonacci)      | istruzioni raddoppiano ad ogni esecuzione --> ad ogni operazione, il numero totale di operazioni raddoppia --> es. Ricorsione di Fibonacci --> fib(40) fa più di 300.000 chiamate!
+_______________________________________________________________________________________________________________________
+
+📌 Casi:
+<-> Caso migliore: input già perfetto → tempo minimo
+<-> Caso peggiore: input peggiore → tempo massimo
+<-> Caso medio: input casuale
+
+✅ Limite superiore:
+Si usa O(...) per dire “non peggiore di”.
+
+-----
+
+🎯        COMPLESSITà DELLO SPAZIO:
+        ______________________________________________________________
+        |Situazione	                     |         Spazio stimato    |
+        |Solo cicli, niente array nuovi	 |           O(1)            |
+        |Array dinamico new int[n]	     |           O(n)            |
+        |Ricorsione	                     |      O(log n) – O(n)      |
+        |Algoritmo in-place	             |           O(1)            |
+        |Algoritmo con copie/split	     |           O(n)            |
+        ______________________________________________________________
+
+-----
+
+"L’efficienza di un algoritmo di sorting può essere stabilita
+analiticamente contando il numero di confronti, in funzione
+della dimensione n dello input.
+Gli algoritmi di ordinamento {Bubble,Selection,Insertion}Sort
+operano in modo simile:
+• ciclo esterno con numero di iterazioni approssimativamente
+uguale alla lunghezza dello array;
+• ciclo interno che scandisce approssimativamente tutti gli
+elementi dello array;
+• di conseguenza, circa n^2 confronti." 
+(Dai delucidi del Prof. Messina (prog 1))
+
+
+<-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><-><->
+
+                                ------------------------------------
+                                |            Ricorsione            |
+                                |                e                 |
+                                |    differenza dall' iterazione   |
+                                ------------------------------------
+
+🧠 Che cos'è la RICORSIONE ?
+--> La ricorsione è una funzione che chiama sé stessa per risolvere un sottoproblema più piccolo.
+
+esempio: 
+                                    int fattoriale(int n) {             //(⏭️ Ricorsione lineare e di coda)
+                                        if (n <= 1) return 1;
+                                        return n * fattoriale(n - 1);
+                                    }
+
+--> fattoriale(5)
+= 5 * fattoriale(5-1) = 5 * 4 * fattoriale(4-1) = 5 * 4 * 3 * fattoriale(3-1) = 5 * 4 * 3 * 2 * fattoriale(2-1) = 5 * 4 * 3 * 2 * 1 || Fine 
+
+📌 Tipi di ricorsione:
+                                                            ^
+⏭️ Ricorsione lineare   -->	Una chiamata, come fattoriale.  |
+⏭️ Ricorsione doppia	--> Due chiamate ricorsive, es. fibonacci
+⏭️ Ricorsione di coda	--> L’ultima istruzione è la ricorsione (ottimizzabile)
+
+--> Esempio di ⏭️ ricorsione doppia:
+
+        Ricorsione di Fibonacci:
+
+                                int fibonacci(int n)
+                                {
+                                    if(n<=1)
+                                        return n;
+                                    return fibonacci(n-1) + fibonacci(n-2);
+                                }        //ricorsione 1   +  ricorsione 2 (riga sopra)
+
+--> fibonacci(5) 
+=                                           fibonacci(4) + fibonacci(3) = 
+                            (fibonacci(3) + fibonacci(2))     +     (fibonacci(2) + fibonacci(1)) = 
+                            /                   /                              \                    \                    
+    (fibonacci(2) + fibonacci(1)) + (fibonacci(1) + fibonacci(0)) + (fibonacci(1) + fibonacci(0)) +  1
+        |                       \         |             |                  |            |            |
+(fibonacci(1) + fibonacci(0)) +  1 +      1       +     0        +         1      +     0     +      1
+=     1       +       0       +  1    +   1       +     0        +         1      +     0      +     1 = 
+     ---                        ---      ---                              ---                       ---
+= fibonacci(5) = 5 .
+----------------
+
+Vediamolo meglio con un grafo ad albero:
+
+fibonacci(5)
+├─ fibonacci(4)
+│  ├─ fibonacci(3)
+│  │  ├─ fibonacci(2)
+│  │  │  ├─ fibonacci(1) → 1
+│  │  │  └─ fibonacci(0) → 0
+│  │  └─ fibonacci(1) → 1
+│  └─ fibonacci(2)
+│     ├─ fibonacci(1) → 1
+│     └─ fibonacci(0) → 0
+└─ fibonacci(3)
+   ├─ fibonacci(2)
+   │  ├─ fibonacci(1) → 1
+   │  └─ fibonacci(0) → 0
+   └─ fibonacci(1) → 1
+
+Adesso vediamo un esempio di:   ⏭️ Ricorsione di coda:
+
+💡 Cos’è la ricorsione di coda?
+È una funzione ricorsiva dove l'ultima istruzione che esegue è la chiamata ricorsiva stessa, senza fare altro dopo.
+Questo permette al compilatore (in teoria) di ottimizzare la ricorsione risparmiando memoria (Tail Call Optimization).
+
+Abbiamo quindi già visto una ricorsione di coda con l'esempio della funzione ricorsiva del fattoriale:
+
+                                    int fattoriale(int n) {             //(⏭️ Ricorsione lineare e di coda)
+                                        if (n <= 1) return 1;
+                                        return n * fattoriale(n - 1);
+                                    }
+
+--------------------------------------
+
+🔧 Differenza tra Ricorsione e Iterazione: 
+
+La ricorsione, a differenza dell'iterazione, non utilizza i classici cicli come il for o il while, 
+ma effettua la ripetizione attraverso chiamate a sé stessa. 
+La ricorsione permette una maggiore leggibilità quasi eccezionalmente nei problemi di natura ricorsivi, ma raramente migliora l'efficienza; 
+al contrario l'iterazione è più esplicita e utilizza cicli e variabili di controllo, ma in realtà è più semplice ed efficiente. 
+La ricorsione è spesso più elegante e naturale in problemi ricorsivi, ma a costo di prestazioni peggiori nella maggior parte dei casi.  
+

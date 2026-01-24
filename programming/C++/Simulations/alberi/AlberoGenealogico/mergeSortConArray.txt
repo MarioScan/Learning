@@ -1,0 +1,55 @@
+
+    void merge(int leftArray[], int RightArray[], int array[], int leftSize, int RightSize) //unisce in maniera ordinata due array
+    {
+        int i = 0, l = 0, r = 0; //indice finale array, left index , right index
+
+        //Confronto dei due array:
+        while(l < leftSize && r < RightSize)
+        {
+            if(leftArray[l] < RightArray[r])
+                array[i++] = leftArray[l++];
+            else // >= 
+                array[i++] = RightArray[r++];
+        }
+        //inserimento eventuali elementi da sinistra () 
+        while(l < leftSize)
+            array[i++] = leftArray[l++];
+        
+        //e da destra...
+        while(r < RightSize)
+            array[i++] = RightArray[r++]; 
+    }
+
+    void mergeSort(int array[], int length) //divide i due array finché non ho solo sotto-array di 1 elemento ciascuno
+    {
+        if(length <= 1)
+            return; //caso base: array già ordinato.
+        
+        int middle = length / 2; 
+
+        //Creazione dei due sotto-array
+        int* leftArray = new int[middle];
+        int* rightArray = new int[length - middle];
+
+        int i = 0, j = 0;
+        
+        //Copia elementi nei due sotto-array
+        for(; i < length; i++)
+        {
+            if(i < middle)
+                leftArray[i] = array[i];
+            else 
+                rightArray[j++] = array[i];
+        }
+
+        //Uso ricorsione della funzione:
+        mergeSort(leftArray,middle);
+        mergeSort(rightArray,length - middle);
+
+        //Unione ed ordinamento:
+        merge(leftArray,rightArray,array,middle,length-middle);
+
+        //libero la memoria dinamica dei due array di appoggio
+        delete[] leftArray;
+        delete[] rightArray; 
+    }

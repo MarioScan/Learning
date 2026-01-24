@@ -1,0 +1,63 @@
+1. La funzione f(n) = n² + n appartiene a O(n²)?
+
+2. La funzione f(n) = 0.5n² + 3n appartiene a O(n)?
+
+3. La funzione f(n) = 4n² + 3log(n) appartiene a O(n)?
+
+4. La funzione f(n) = n log(n) appartiene a O(n²)?
+
+5. La funzione f(n) = 5 (costante per ogni n) appartiene a O(n)?
+
+6. La funzione f(n) = 5 (costante per ogni n) appartiene a O(1)?
+
+7. Una funzione appartenente a O(n²) appartiene anche a O(n log(n))?
+
+8. Una funzione appartenente a O(n) appartiene anche a O(n log(n))?
+
+9. Se h(n) e k(n) appartengono entrambe a O(g(n)), allora la funzione f(n) = 2h(n) + 2k(n) appartiene a O(g(n))?
+
+10. La funzione f(n) = log(n) appartiene a O(2^n)?
+
+11. Una funzione appartenente a O(log n) appartiene anche a O(n)?
+
+12. Una funzione appartenente a O(n²) appartiene anche a O(n³)?
+
+13. Se la funzione f(n) ∈ O(g(n)), allora è sempre vero che g(n) ∈ O(f(n))?
+
+14. Se la funzione f(n) ∈ O(g(n)), allora necessariamente g(n) ∈ O(f(n))?
+
+15. Se h(n) e k(n) sono due funzioni appartenenti a O(g(n)), allora la funzione f(n) = h(n) + k(n) appartiene anch’essa a O(g(n))?
+
+16. La funzione f(n) = n² + 3n appartiene a O(n³)?
+
+17. O(2³) = O(1)?
+
+18. La funzione f(n) = 1 (costante per tutti gli n) appartiene a O(n)?
+
+19. La funzione f(n) = 2n + 3n² appartiene a O(n)?
+
+20. La funzione f(n) = 2n + 3n² appartiene a O(n²)?
+
+21. Se f(n) = 4n² + 3n, a quale classe di complessità appartiene?
+
+22. Se f(n) = n log(n) + 5n, a quale classe di complessità appartiene?
+
+23. Se f(n) = n² + 3n log(n), a quale classe di complessità appartiene?
+
+24. Se f(n) = 2^n + 3n, a quale classe di complessità appartiene?
+
+25. Se f(n) = n³ + log(n), a quale classe di complessità appartiene?
+
+26. Quale delle seguenti funzioni cresce più velocemente?
+    a) n log(n)
+    b) n²
+    c) n³
+    d) log(n)
+
+27. Se f(n) ∈ O(n log(n)) e g(n) ∈ O(n²), allora f(n) + g(n) ∈ O(n²)?
+
+28. Se f(n) ∈ O(n) e g(n) ∈ O(log(n)), allora f(n) * g(n) ∈ O(n log(n))?
+
+29. Se f(n) ∈ O(n²) e g(n) ∈ O(n³), allora f(n) + g(n) ∈ O(n³)?
+
+30. Se f(n) ∈ O(n log(n)), allora f(n) ∈ O(n²)?
