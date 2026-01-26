@@ -1,0 +1,241 @@
+/*
+-------------
+COLOR PALETTE
+
+#ffffff - White
+#00635D - Stormy Teal (Cyan) 
+#b1e5f2 - Frosted Blue (Kind of green-blue)
+#502274 - Indigo Velvet 
+#2f242c - Shadow Grey 
+
+------------
+*/
+
+
+/*clear default style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style of the website */
+body {
+  font-family: sans-serif;
+  line-height: 1.6; /* vertical spacing between lines */
+  background-color: #2f242c; 
+  color: #ffffff; 
+}
+
+pre{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+a{
+  color: #00635D;
+}
+
+
+/* -- Navigation bar -- */
+.navbar {
+  display: flex; /* flex layout to arrange items in a row */
+  justify-content: space-between; /* space between logo and menu */
+  align-items: center; /* vertical alignment */
+  padding: 1rem 2rem; /* inner spacing */
+  background-color: #1e1a1d; /* white background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  position: sticky; /* stick to top when scrolling */
+  top: 0; /* top position */
+  z-index: 100; /* above other elements */
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-weight: 700; /* bold */
+  font-size: 1.5rem; /* font size */
+  color: #3498db;   /* dark color for elegance */
+}
+
+/* Navbar links container */
+.navbar ul {
+  display: flex; /* horizontal layout */
+  list-style: none; /* remove bullets */
+  gap: 1.5rem; /* spacing between items */
+}
+
+/* Style of the links */
+.navbar a {
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* inherit text color from parent */
+}
+
+/* Each navbar item */
+.navbar ul li {
+  position: relative; /* useful for dropdowns or hover effects */
+}
+
+/* Navbar links */
+.navbar ul li a {
+  font-weight: 500; /* medium font weight */
+  padding: 0.5rem 0; /* vertical spacing */
+  transition: color 0.3s; /* smooth color change on hover */
+}
+
+/* Hover effect on navbar links */
+.navbar ul li a:hover {
+  color: #3498db; /* blue color on hover */
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex; /* flex layout */
+  flex-direction: column; /* stack items vertically */
+  justify-content: center; /* vertical centering */
+  align-items: center; /* horizontal centering */
+  height: 90vh; /* 90% of viewport height */
+  text-align: center; /* center text */
+  background: linear-gradient(135deg, #2c252a, #502274);
+  color: #fff; /* white text */
+  padding: 0 1rem; /* horizontal padding for smaller screens */
+}
+
+.hero img {
+  width: 200px;          /* larghezza */
+  height: 200px;         /* altezza */
+  object-fit: cover;     /* taglia senza distorcere */
+  border-radius: 50%;    /* immagine tonda */
+  border: 2px solid #00635D; /* bordo tech */
+  margin-bottom: 1rem;   /* spazio sotto */
+}
+
+
+/* Main heading in hero */
+.hero h1 {
+  font-size: 3rem; /* large font size */
+  margin-bottom: 1rem; /* spacing below */
+}
+
+/* Hero paragraph */
+.hero p {
+  font-size: 1.2rem; /* readable size */
+  max-width: 600px; /* limit text width */
+}
+
+/* Call-to-action button */
+.hero .cta {
+  margin-top: 2rem; /* spacing above button */
+  padding: 0.75rem 1.5rem; /* inner spacing */
+  background-color: #fff; /* white background */
+  color: #760692; /* blue text */
+  font-weight: 700; /* bold text */
+  border-radius: 5px; /* rounded corners */
+  transition: color 0.3s; /* smooth hover animation */
+}
+
+/* Hover effect for CTA */
+.hero .cta:hover {
+  background-color: #760692; /* blue background on hover */
+  color: #fff; /* white text */
+}
+
+/* --- ABOUT SECTION --- */
+.about {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;  /* spacing around section */
+  background-color: #2f242c; /* white background */
+  display: flex; /* flex layout */
+  flex-direction: column; /* stack items vertically */
+  align-items: left; /* horizontal centering */
+  text-align: left; /* center text */
+}
+
+/* About section heading */
+.about h2 {
+  text-align: center;
+  font-size: 2.2rem; /* heading size */
+  margin-bottom: 1rem; /* spacing below */
+  color: #ffffff; /* dark color */
+}
+
+/* About section paragraph */
+.about p {
+  font-size: 1.1rem; /* readable font size */
+  color: #ffffff; /* slightly lighter text color */
+}
+
+/* --- PROJECTS SECTION --- */
+.projects {
+  padding-top: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem; /* spacing around section -- top right bottom left */
+  background-color: #2f242c; /* white background */
+  display: flex; /* flex layout */
+  flex-direction: column; /* stack items vertically */
+  align-items: left; /* horizontal centering */
+  text-align: left; /* center text */
+}
+
+/* Projects section heading */
+.projects h2 {
+  text-align: center;
+  font-size: 2.2rem; /* heading size */
+  margin-bottom: 1rem; /* spacing below */
+  color: #ffffff; /* dark color */
+}
+
+/* Projects section paragraph */
+.projects p {
+  font-size: 1.1rem; /* readable font size */
+  color: #ffffff; /* slightly lighter text color */
+}
+
+/* --- CONTACTS SECTION --- */
+.contacts {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem; /* spacing around section -- top right bottom left */
+  background-color: #1e1a1d; /* white background */
+  display: flex; /* flex layout */
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* horizontal centering */
+  text-align: center; /* center text */
+}
+
+/* Projects section heading */
+.contacts h2 {
+  text-align: center;
+  font-size: 2.2rem; /* heading size */
+  margin-bottom: 1rem; /* spacing below */
+  color: #ffffff; /* dark color */
+}
+
+.contacts-icons {
+  display: flex;           /* mette tutto in fila */
+  justify-content: center; /* centra orizzontalmente */
+  gap: 1.5rem;             /* spazio tra le icone */
+  margin-top: 1rem;        /* un po’ di spazio sopra */
+}
+
+.contacts img {
+  width: 60px;          /* larghezza */
+  height: 60px;         /* altezza */
+  object-fit: cover;     /* taglia senza distorcere */
+}
+
+/* Responsive settings */
+@media(max-width: 768px){
+  .hero h1 {
+    font-size: 2.2rem; /* smaller heading on mobile */
+  }
+  .hero p {
+    font-size: 1rem; /* smaller paragraph on mobile */
+  }
+  .navbar ul {
+    gap: 1rem; /* reduce spacing between navbar links */
+  }
+}
