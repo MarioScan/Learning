@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'learning/website'   # <-- qui metti la cartella del tuo sito
+          path: 'learning/Web&Databases/Website'   # <-- qui metti la cartella del tuo sito
 
       - name: Deploy to GitHub Pages
         id: deployment
