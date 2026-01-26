@@ -1,2 +1,2 @@
 # Learning
-Exercising in different programming languages. 
+Study material, exercises and exam practice in different programming languages. 
