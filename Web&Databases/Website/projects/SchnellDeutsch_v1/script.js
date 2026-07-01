@@ -630,7 +630,7 @@ function showStats() {
     if (divCompleta) divCompleta.innerHTML = "";
 
     if (paroleViste.length === 0) {
-        if (divCompleta) divCompleta.innerHTML = "<p>Non hai ancora studiato nessuna parola. Inizia a giocare per vedere i tuoi progressi!</p>";
+        if (divCompleta) divCompleta.innerHTML = "<p>Non hai ancora studiato nessuna parola. Inizia a giocare per vedere i tuoi progressi! / Spiele jetzt, um deine Fortschritte zu sehen</p>";
         return;
     }
 
