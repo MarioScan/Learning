@@ -811,7 +811,7 @@
     },
     {
         "de": { "singular": "Sofa", "plural": "Sofas", "gender": "n" },
-        "it": { "singular": "sofà", "plural": "sofà", "gender": "m", "synonyms": ["divano"] },
+        "it": { "singular": "divano", "plural": "divani", "gender": "m", "synonyms": ["sofà"] },
         "type": "nome", "room": "balkon",
         "stats": { "status": 1, "mistakes": 0, "correct": 0 }
     },
