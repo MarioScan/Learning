@@ -1,0 +1,204 @@
+----------------------------------------------------------------------
+
+CONTESTO PROGETTO: Webapp Flashcards & Scrittura Italiano-Tedesco (SchnellDeutsch)
+
+Struttura File:
+- index.html (Navigazione a schermate tramite ID e classi .schermata/.attiva)
+- script.js (Logica asincrona, ascolto tastiera, controlli ortografici)
+- style.css (Grafica moderna, dashboard statistiche, animazioni streak)
+- words.json (Database vocaboli eterogeneo: oggetti per "nome" con gender/singular/plural, stringhe per verbi/aggettivi/avverbi. Supporta la proprietà facoltativa "synonyms" come array di stringhe in minuscolo e senza articoli).
+
+Logiche Chiave Implementate nel Codice:
+1. Navigazione GUI: Gestita via JS tramite la funzione mostraSottomenu(id). Il titolo principale è "SchnellDeutsch".
+2. Gestione Articoli & Eccezioni: Funzione ottieniArticolo() che calcola dinamicamente gli articoli (singolari e plurali). In italiano gestisce le eccezioni S+consonante/Z ("lo"/"gli") e l'apostrofo per le vocali. In tedesco il plurale usa sempre "die".
+3. Controllo Ibrido Case-Sensitive: La modalità Scrittura è 100% case-insensitive per l'italiano. Per il tedesco è severa (case-sensitive) sui sostantivi, ma tollera se l'utente scrive la primissima lettera della risposta (l'articolo) in maiuscolo (es. accetta sia "der Teppich" che "Der Teppich").
+4. Anti-Ripetizione: In modalità Allenamento, un ciclo impedisce alla stessa parola di uscire due volte di seguito.
+5. Modalità Allenamento vs Challenge: Allenamento è infinito con ripetizioni. Challenge ha mazzi unici pre-mescolati (30, 60 o tutte le parole), mostra il progresso (es. "Parola 4/30"), include la modalità Mix (Parole casuali) anche per le Flashcards e attiva una schermata di Game Over con punteggio finale (n/t) al primo errore.
+6. Scorciatoie Tastiera: Modalità Scrivi usa "Invio" per verificare e avanzare. Modalità Flashcard usa "Spazio/Invio" per girare la carta e "Freccia Sinistra" (Indovinata) / "Freccia Destra" (Sbagliata) per votare.
+7. Streak Visiva: Contatore verde di risposte corrette di fila. Se si interrompe, si azzera, si colora di rosso e si attiva un'animazione CSS di sbalzo visivo (.streak-rotta). Si resetta tornando al menu.
+8. LocalStorage Scalabile: Non salva l'intero dizionario (permettendo aggiornamenti futuri di words.json sul server), ma memorizza solo i punteggi personali associando i voti a una chiave univoca in minuscolo "parola_tipo" (es. "haus_nome").
+9. Dashboard Statistiche: Mostra il totale delle parole viste, due div moderne con la Top 5 delle migliori (più corrette) e la Top 5 delle peggiori (più errori), seguite dall'elenco completo ordinato per errori decrescenti.
+
+Sei pronto ad aiutarmi a continuare lo sviluppo o a fare modifiche su questa base di codice.
+
+
+----------------------------------------------------------------------
+
+
+
+
+
+1. Aggiungere nella modalità "Scrivi parola" sotto la casella di testo le vocali con umlaut e la lettera per la doppia ss, sotto metti in corsivo asterisco di nota e scrivi nome dei doppi punti (Umlaut) e il nome del simbolo della doppia ss
+2. aggiungere nuova modalità "Learning", con opzione A casa si trova... (prima scritto in tedesco e poi in italiano), cliccando questa sezione abbiamo ogni parte della casa, vedrai a breve le parti da inserire:
+das Schlafzimmer
+das Wohnzimmer
+che si possono popolare prendendo le parole già inserite nel file JSON. 
+Poi continuando trovi prima la stanza o l'area della casa e segue il vocabolario, controlla eventuali errori, aggiungi le Umlaut dove serve, seguendo poi il formato del file JSON inserisci tutti i plurali ed eventuali sinonimi comuni come vedi dal formato JSON.
+
+das Badezimmer 
+das Waschbecken
+die Dusche
+die Badewanne
+die Toilette / das WC 
+der Spiegel 
+der Wasserhahn
+das Handtuch
+die Seife 
+das Shampoo
+die Zahnburste (u Umlaut)
+die Zahnpasta
+der Badteppich
+die Waschmaschine
+der Trockner
+die Handbrause
+der Schwamm
+der Fohn (o Umlaut)
+das Parfum (u Umlaut)
+das Deodorant
+der Abzieher / der Fensterabzieher 
+die Medikamente 
+die Seifenschale / die Seifenhalter
+der Kleiderhaken / die Kleiderstange
+der Abfluss / der Wasserablauf
+
+der Kuche (u Umlaut)
+der Kuhlschrank (u Umlaut)
+der Ofen 
+die Mikrowelle
+die Spule (u Umlaut)
+der Wasserhahn
+der Tisch 
+der Stuhl
+der Teller 
+das Glas 
+die Tasse 
+das Besteck
+das Messer 
+die Gabel 
+der Loffel (o Umlaut)
+der Teeloffel (o Umlaut)
+der Topf 
+die Pfanne 
+die Spulmaschine (u Umlaut)
+der Mullsack (u Umlaut)
+der Mulleimer (u Umlaut)
+der Kochloffel (o Umlaut)
+die Zange
+das Sieb 
+die Schublade 
+der Schwamm
+das Handtuch 
+das Abtropfgestell
+die Putzmittel
+der Besen 
+der Handfeger
+die Kehrschaufel
+das Geschirrtuch
+das Kuchenpapier (u Umlaut)
+die Frischhaltefolie 
+die Alufolie
+das Spulmittel (u Umlaut)
+der Dosenoffner (o Umlaut)
+die Reibe 
+das Schneidebrett
+die Kelle 
+
+der Flur 
+die Tur (u Umlaut)
+der Schuhschrank
+die Schuhe 
+der Teppich
+der Schlussel (u Umlaut)
+der Schlusselbund (prima u con Umlaut)
+der Schlusselanhanger (u e a con Umlaut)
+die Treppe 
+der Schirmstander (a Umlaut)
+der Kleiderhaken
+die Garderobe
+
+der Keller 
+die Waschmaschine 
+der Trockner 
+die Kartons 
+das Fahrrad 
+die Werkzeuge 
+der Werkzeugkasten
+das Regal
+der Staubsauger 
+die Getranke (a Umlaut)
+der Vorrat
+die Putzmittel
+das Waschmittel 
+der Alkohol
+die alkoholischen Getranke (a Umlaut of last word)
+das Tierfutter 
+die Katzentoilette
+das Bugeleisen (u Umlaut)
+der Waschestander (second a Umlaut)
+das Fenster 
+
+der Garten 
+der Baum 
+die Blume 
+das Gras 
+der Rasen
+die Hecke 
+die Terrasse 
+der Grill
+der Gartenstuhl
+der Gartentisch
+die Giesskanne (la doppia esse a forma di B)
+der Schlauch
+die Gartengerate (a Umlaut)
+das Gewachshaus (a Umlaut)
+das Schwimmbad / der Pool 
+die Spielgerate (a Umlaut)
+der Sonnenschirm
+der Zaun 
+die Gitter 
+das Vogelhaus 
+das Bienenhaus 
+die Pflanze
+der Rasenmaher (a Umlaut)
+die Gartenbank 
+der Blumentopf 
+die Solarlampe 
+
+der Balkon 
+(inserire oggetti ripetuti anche nel giardino che si trovano tipicamente in un balcone)
+der Vorhang 
+das Moskitonetz
+die Dekoration
+die Vase 
+der Blumentopf
+das Lounge 
+das Sofa 
+
+die Garage
+das Auto 
+das Fahrrad 
+das Motorrad 
+die Werkzeug 
+die Reifen 
+die Ersatzteile 
+der Eimer 
+die Regale 
+der Schrank 
+das Fahrradol (o Umlaut)
+das Motorol (o Umlaut) 
+das Rad 
+der Motor 
+die Kette 
+der Helm 
+das Benzin 
+die Werkstatt
+der Schraubenschlussel (u Umlaut)
+die Abdeckung 
+der Sommerreifen 
+der Winterreifen
+die Fahrzeugabdeckung 
+die Autoabdeckung 
+die Motorradabdeckung 
+die Autoreifen 
+die Motorreifen 
+   

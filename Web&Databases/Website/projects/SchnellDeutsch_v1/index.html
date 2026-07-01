@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>SchnellDeutsch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-wrapper">
+
+            <!-- MENU PRINCIPALE -->
+    <div id="menu-principale" class="schermata attiva">
+        <h1>SchnellDeutsch</h1>
+        <button class="btn-menu" onclick="mostraSottomenu('menu-scrivi')">✍️ Writing mode</button>
+        <button class="btn-menu" onclick="mostraSottomenu('menu-flashcards')">📇 Flashcards</button>
+        <button class="btn-menu" onclick="mostraSottomenu('menu-learning')">📖 Learning</button>
+        <button class="btn-menu" onclick="showStats()">📊 Stats</button>
+    </div>
+
+    <!-- SOTTOMENU: SCRIVI LA PAROLA -->
+    <div id="menu-scrivi" class="schermata">
+        <button onclick="tornaAlMenuPrincipaleH1()">⬅ Menù / Hauptmenü</button>
+        <h2>Writing mode</h2>
+        
+        <div class="opzioni-difficolta">
+            <strong>⚙️ Difficoltà / Schwierigkeitsgrad:</strong><br>
+            <label><input type="radio" name="difficolta-scrivi" value="singolo" checked> Solo singolare / Nur Singular</label><br>
+            <label><input type="radio" name="difficolta-scrivi" value="misto"> Singolare e plurale / Singular und Plural</label>
+        </div>
+
+        <div class="sezione-titolo">🏋️ Allenamento / Übungsmodus</div>
+        <button onclick="start('scrivi', 'allenamento', 'de-it')">Deutsch ➔ Italiano</button>
+        <button onclick="start('scrivi', 'allenamento', 'it-de')">Italiano ➔ Deutsch</button>
+        <button onclick="start('scrivi', 'allenamento', 'casuali')">🔀 Casual</button>
+
+        <div class="sezione-titolo">🏆 Challenge</div>
+        
+        <div class="challenge-grid">
+            <div class="challenge-col">
+                <h4>🇩🇪 ➔ 🇮🇹</h4>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'de-it', 30)">30 Worte</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'de-it', 60)">60 Worte</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'de-it', 'all')">Unbegrenzt</button>
+            </div>
+            <div class="challenge-col">
+                <h4>🇮🇹 ➔ 🇩🇪</h4>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'it-de', 30)">30 Parole</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'it-de', 60)">60 Parole</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'it-de', 'all')">Illimitato</button>
+            </div>
+            <div class="challenge-col">
+                <h4>🔀 Casual</h4>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'casuali', 30)">30x</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'casuali', 60)">60x</button>
+                <button class="btn-grid" onclick="start('scrivi', 'challenge', 'casuali', 'all')">Unlimited</button>
+            </div>
+        </div>
+        <span class="keyboard-hint" style="margin-top: 10px; font-style: italic;">*Unlimited: Illimitato / Unbegrenzt</span>
+    </div>
+    <!-- SOTTOMENU: FLASHCARDS -->
+    <div id="menu-flashcards" class="schermata">
+        <button onclick="tornaAlMenuPrincipaleH1()">⬅ Menù / Hauptmenü</button>
+        <h2>Modalità Flashcards</h2>
+        
+        <div class="opzioni-difficolta">
+            <strong>⚙️ Difficoltà / Schwierigkeitsgrad:</strong><br>
+            <label><input type="radio" name="difficolta-flashcard" value="singolo" checked> Solo singolare</label><br>
+            <label><input type="radio" name="difficolta-flashcard" value="misto"> Singolare e plurale (Casuale)</label>
+        </div>
+
+        <div class="sezione-titolo">🏋️ Allenamento / Übungsmodus</div>
+        <button onclick="start('flashcard', 'allenamento', 'de-it')">Deutsch ➔ Italiano</button>
+        <button onclick="start('flashcard', 'allenamento', 'it-de')">Italiano ➔ Deutsch</button>
+        <button onclick="start('flashcard', 'allenamento', 'casuali')">🔀 Casual</button>
+
+        <div class="sezione-titolo">🏆 Challenge</div>
+        
+        <div class="challenge-grid">
+            <div class="challenge-col">
+                <h4>🇩🇪 ➔ 🇮🇹</h4>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'de-it', 30)">30 Worte</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'de-it', 60)">60 Worte</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'de-it', 'all')">Unbegrenzt</button>
+            </div>
+            <div class="challenge-col">
+                <h4>🇮🇹 ➔ 🇩🇪</h4>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'it-de', 30)">30 Parole</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'it-de', 60)">60 Parole</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'it-de', 'all')">Illimitato</button>
+            </div>
+            <div class="challenge-col">
+                <h4>🔀 Casual</h4>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'casuali', 30)">30x</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'casuali', 60)">60x</button>
+                <button class="btn-grid" onclick="start('flashcard', 'challenge', 'casuali', 'all')">Unlimited</button>
+            </div>
+        </div>
+        <span class="keyboard-hint" style="margin-top: 10px; font-style: italic;">*Unlimited: Illimitato / Unbegrenzt</span>
+    </div>
+
+    <!-- SOTTOMENU: LEARNING MODE -->
+    <div id="menu-learning" class="schermata">
+        <button onclick="tornaAlMenuPrincipaleH1()">⬅ Menù / Hauptmenü</button>
+        <h2>Learning</h2>
+        <p style="font-size: large;">Choose an argument to start with:</p>
+        <div id="macro-argomenti-learning" style="text-align: center; margin-top: 20px;">
+            <button class="btn-menu" onclick="apriMacroArgomento('casa')">🏠 Zu Hause / A casa</button>
+        </div>
+        <div id="zona-aree-casa-learning" style="display: none; margin-top: 20px;">
+            <button onclick="indietroAilLivelloMacro()" style="background-color: #718096; margin-bottom: 15px;">⬅ Macroargomenti / Hauptthemen</button>
+            <div id="lista-stanze-verticale-learning"></div>
+        </div>
+    </div>
+
+    <!-- SCHERMATA DI GIOCO -->
+    <div id="zona-gioco" class="schermata">
+        <button onclick="tornaAlSottomenuPrecedente()">⬅ Torna alle Modalità</button>
+        <span id="progresso-challenge" style="float: right; font-weight: bold; color: #718096; font-size: 1.1rem; margin-top: 10px;"></span>
+        
+        <div class="card">
+            <p id="parola-quesito"></p>
+        </div>
+
+        <div id="zona-dettagli-risposta" style="display: none; text-align: center; margin-bottom: 15px;">
+            <p id="parola-tradotta" style="font-size: 1.3rem; font-weight: bold; margin-bottom: 5px;"></p>
+            <p id="parola-singolare-extra" class="info-extra"></p>
+        </div>
+
+        <div id="interfaccia-scrittura" style="display: none;">
+            <input type="text" id="input-risposta" placeholder="Scrivi la traduzione..." autocomplete="off">
+            <div class="tastiera-tedesca">
+                <div id="blocco-tasti-caratteri"></div>
+                <span id="nota-spiegazione-tastiera" class="keyboard-hint" style="margin-top: 8px; display: block;"></span>
+            </div>
+            <span class="keyboard-hint">Premi ↵ Invio per verificare / avanzare</span>
+            <br>
+            <button id="btn-invia-scrivi" onclick="controllaScrittura()">Invia Risposta</button>
+            <div id="feedback-scrittura" class="feedback"></div>
+            <button id="btn-prossima-scrivi" onclick="prossimaCarta()" style="display: none;">Prossima parola ➔</button>
+        </div>
+
+        <div id="interfaccia-flashcard" style="display: none;">
+            <button id="btn-gira" onclick="giraCarta()">Gira Carta</button>
+            <span class="keyboard-hint">Premi Barra Spaziatrice per girare</span>
+            <div id="zona-bottoni-flashcard" style="display: none;">
+                <button onclick="registraRisultatoFlashcard(true)">👍 Indovinata (🡨)</button>
+                <button onclick="registraRisultatoFlashcard(false)">👎 Sbagliata (🡪)</button>
+                <span class="keyboard-hint">Usa le frecce direzionali 🡨 / 🡪 per rispondere</span>
+            </div>
+        </div>
+
+        <div id="blocco-streak" class="streak-container streak-attiva">
+            🔥 Corrette di fila: <span id="contatore-streak">0</span>
+        </div>
+    </div>
+    <!-- SCHERMATA: PAGINA CARD LEARNING (A schermo intero) -->
+    <div id="schermata-card-learning" class="schermata">
+        <button onclick="chiudiPaginaCardLearning()">⬅ Torna alle Stanze</button>
+        <span id="progresso-learning-card" style="float: right; font-weight: bold; color: #718096; font-size: 1.1rem; margin-top: 10px;"></span>
+        
+        <div class="card" style="border-color: #3498db; background-color: #f8fafc; margin-top: 30px;">
+            <p id="learning-de" style="font-size: 1.8rem; font-weight: bold; color: #2c3e50; margin-bottom: 5px;"></p>
+            <p id="learning-info-numero" class="info-extra" style="margin-top: 0; margin-bottom: 20px; font-weight: normal;"></p>
+            <hr style="border: 0; border-top: 1px dashed #cbd5e1; margin: 15px 0;">
+            <p id="learning-it" style="font-size: 1.4rem; color: #27ae60; font-weight: bold; margin-top: 5px;"></p>
+            <p id="learning-sinonimi" class="info-extra" style="font-size: 0.95rem;"></p>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="btn-prossima-learning" onclick="prossimaParolaLearning()" style="background-color: #27ae60; padding: 14px 28px; width: 100%; max-width: 400px; display: block; margin: 0 auto;">Prossima parola ➔</button>
+            <span class="keyboard-hint" style="margin-top: 10px;">Puoi anche premere ↵ Invio o la Barra Spaziatrice per avanzare</span>
+        </div>
+    </div>
+
+    <!-- SCHERMATA GAME OVER CHALLENGE (Con Mini Menu) -->
+    <div id="zona-game-over" class="schermata">
+        <div class="game-over-card">
+            <div class="game-over-title">💔 GAME OVER</div>
+            <p style="font-size: 1.2rem; color: #718096;">Ti sei interrotto durante la Challenge!</p>
+            <div id="punteggio-game-over" class="game-over-score">Punteggio: 0 / 30</div>
+            <div style="margin-top: 20px;">
+                <button onclick="riprovaChallenge()" style="background-color: #27ae60; padding: 14px 28px; min-width: 180px;">🔄 Riprova</button>
+                <button onclick="tornaAlSottomenuPrecedente()" style="background-color: #718096; padding: 14px 28px; min-width: 180px;">⬅ Torna alle Modalità</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHERMATA STATISTICHE -->
+    <div id="zona-statistiche" class="schermata">
+        <button onclick="tornaAlMenuPrincipaleH1()">⬅ Menù / Hauptmenü</button>
+        <h2 id="titolo-stats">Parole viste / Gesehene Wörter: 0/0</h2>
+        
+        <div class="stats-dashboard">
+            <div class="stats-box box-top">
+                <h3>🏆 Le 5 più corrette / <br>Top 5 Richtig</h3>
+                <div id="stats-le-migliori"></div>
+            </div>
+            <div class="stats-box box-worst">
+                <h3>⚠️ Le 5 più sbagliate /<br>Top 5 Falsch</h3>
+                <div id="stats-le-peggiori"></div>
+            </div>
+        </div>
+
+        <div class="lista-generale-stats">
+            <h3>📖 Parole viste / Gesehene Wörter</h3>
+            <div id="tabella-stats-completa"></div>
+        </div>
+    </div>
+
+    </div> <!-- Fine App-wrapper-->
+
+    <script src="script.js"></script>
+
+<footer id="main-footer">
+    <p>
+        Created by:
+        <a href="../../index.html" target="_blank" rel="noopener noreferrer">Mario Scandurra</a>
+    </p>
+</footer>
+
+</body>
+</html>

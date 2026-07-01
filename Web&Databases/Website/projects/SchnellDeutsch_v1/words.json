@@ -1,0 +1,914 @@
+[
+    {
+        "de": { "singular" : "Haus", "plural" : "Häuser", "gender" : "n" },
+        "it" : { "singular" : "casa", "plural" : "case", "gender" : "f" },
+        "type" : "nome", "room": "generale",
+        "stats" : { "status" : 1, "mistakes" : 0, "correct" : 0 }
+    },
+    {
+        "de": "schnell", "it": "veloce", "type" : "aggettivo", "room": "generale",
+        "stats" : { "status" : 1, "mistakes" : 0, "correct" : 0 }
+    },
+    {
+        "de": "laufen", "it": "correre", "type" : "verbo", "room": "generale",
+        "stats" : { "status" : 1, "mistakes" : 0, "correct" : 0 }
+    },
+    {
+        "de": { "singular" : "Hund", "plural" : "Hunde", "gender" : "m" },
+        "it" : { "singular" : "cane", "plural" : "cani", "gender" : "m" },
+        "type" : "nome", "room": "generale",
+        "stats" : { "status" : 1, "mistakes" : 0, "correct" : 0 }
+    },
+    {
+        "de": "immer", "it": "sempre", "type" : "avverbio", "room": "generale",
+        "stats" : { "status" : 1, "mistakes" : 0, "correct" : 0 }
+    },
+    {
+        "de": { "singular": "Schlafzimmer", "plural": "Schlafzimmer", "gender": "n" },
+        "it": { "singular": "camera da letto", "plural": "camere da letto", "gender": "f", "synonyms": ["camera"] },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Bett", "plural": "Betten", "gender": "n" },
+        "it": { "singular": "letto", "plural": "letti", "gender": "m" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schrank", "plural": "Schränke", "gender": "m" },
+        "it": { "singular": "armadio", "plural": "armadi", "gender": "m" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Lampe", "plural": "Lampen", "gender": "f" },
+        "it": { "singular": "lampada", "plural": "lampade", "gender": "f" },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Tisch", "plural": "Tische", "gender": "m" },
+        "it": { "singular": "tavolo", "plural": "tavoli", "gender": "m" },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Nachttisch", "plural": "Nachttische", "gender": "m" },
+        "it": { "singular": "comodino", "plural": "comodini", "gender": "m" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Fenster", "plural": "Fenster", "gender": "n" },
+        "it": { "singular": "finestra", "plural": "finestre", "gender": "f" },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Spiegel", "plural": "Spiegel", "gender": "m" },
+        "it": { "singular": "specchio", "plural": "specchi", "gender": "m" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Teppich", "plural": "Teppiche", "gender": "m" },
+        "it": { "singular": "tappeto", "plural": "tappeti", "gender": "m" },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer", "flur", "badezimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Stuhl", "plural": "Stühle", "gender": "m" },
+        "it": { "singular": "sedia", "plural": "sedie", "gender": "f" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Tür", "plural": "Türen", "gender": "f" },
+        "it": { "singular": "porta", "plural": "porte", "gender": "f" },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer", "flur", "badezimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kommode", "plural": "Kommoden", "gender": "f" },
+        "it": { "singular": "cassettiera", "plural": "cassettiere", "gender": "f", "synonyms": ["comò"] },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Uhr", "plural": "Uhren", "gender": "f" },
+        "it": { "singular": "orologio", "plural": "orologi", "gender": "m" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Bild", "plural": "Bilder", "gender": "n" },
+        "it": { "singular": "quadro", "plural": "quadri", "gender": "m", "synonyms": ["dipinto", "immagine", "foto"] },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer", "flur", "badezimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Fernseher", "plural": "Fernseher", "gender": "m" },
+        "it": { "singular": "televisore", "plural": "televisori", "gender": "m", "synonyms": ["televisione", "tv"] },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Computer", "plural": "Computer", "gender": "m" },
+        "it": { "singular": "computer", "plural": "computer", "gender": "m", "synonyms": ["pc"] },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Regal", "plural": "Regale", "gender": "n" },
+        "it": { "singular": "scaffale", "plural": "scaffali", "gender": "m", "synonyms": ["mensola"] },
+        "type": "nome", "room": ["schlafzimmer", "wohnzimmer", "flur", "badezimmer"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schreibtisch", "plural": "Schreibtische", "gender": "m" },
+        "it": { "singular": "scrivania", "plural": "scrivanie", "gender": "f" },
+        "type": "nome", "room": "schlafzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Wohnzimmer", "plural": "Wohnzimmer", "gender": "n" },
+        "it": { "singular": "soggiorno", "plural": "soggiorni", "gender": "m", "synonyms": ["salotto"] },
+        "type": "nome", "room": "wohnzimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Badezimmer", "plural": "Badezimmer", "gender": "n" },
+        "it": { "singular": "bagno", "plural": "bagni", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Waschbecken", "plural": "Waschbecken", "gender": "n" },
+        "it": { "singular": "lavandino", "plural": "lavandini", "gender": "m", "synonyms": ["lavabo"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Dusche", "plural": "Duschen", "gender": "f" },
+        "it": { "singular": "doccia", "plural": "docce", "gender": "f" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Badewanne", "plural": "Badewannen", "gender": "f" },
+        "it": { "singular": "vasca da bagno", "plural": "vasche da bagno", "gender": "f", "synonyms": ["vasca"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Toilette", "plural": "Toletten", "gender": "f" },
+        "it": { "singular": "water", "plural": "water", "gender": "m", "synonyms": ["wc", "gabinetto"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Wasserhahn", "plural": "Wasserhähne", "gender": "m" },
+        "it": { "singular": "rubinetto", "plural": "rubinetti", "gender": "m" },
+        "type": "nome", "room": ["badezimmer", "garten"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Handtuch", "plural": "Handtücher", "gender": "n" },
+        "it": { "singular": "asciugamano", "plural": "asciugamani", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Seife", "plural": "Seifen", "gender": "f" },
+        "it": { "singular": "sapone", "plural": "saponi", "gender": "f" },
+        "type": "nome", "room": ["badezimmer","kuche"],
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Shampoo", "plural": "Shampoos", "gender": "n" },
+        "it": { "singular": "shampoo", "plural": "shampoo", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Zahnbürste", "plural": "Zahnbürsten", "gender": "f" },
+        "it": { "singular": "spazzolino da denti", "plural": "spazzolini da denti", "gender": "m", "synonyms": ["spazzolino"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Zahnpasta", "plural": "Zahnpasten", "gender": "f" },
+        "it": { "singular": "dentifricio", "plural": "dentifrici", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Badteppich", "plural": "Badteppiche", "gender": "m" },
+        "it": { "singular": "tappetino da bagno", "plural": "tappetini da bagno", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+        
+    {
+        "de": { "singular": "Waschmaschine", "plural": "Waschmaschinen", "gender": "f" },
+        "it": { "singular": "lavatrice", "plural": "lavatrici", "gender": "f" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Trockner", "plural": "Trockner", "gender": "m" },
+        "it": { "singular": "asciugatrice", "plural": "asciugatrici", "gender": "f" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Handbrause", "plural": "Handbrausen", "gender": "f" },
+        "it": { "singular": "doccino", "plural": "doccini", "gender": "m", 
+        "synonyms": ["soffione"] },"type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schwamm", "plural": "Schwämme", "gender": "m" },
+        "it": { "singular": "spugna", "plural": "spugne", "gender": "f" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Föhn", "plural": "Föhne", "gender": "m" },
+        "it": { "singular": "asciugacapelli", "plural": "asciugacapelli", "gender": "m", "synonyms": ["fon"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Parfüm", "plural": "Parfüms", "gender": "n" },
+        "it": { "singular": "profumo", "plural": "profumi", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Deodorant", "plural": "Deodorante", "gender": "n" },
+        "it": { "singular": "deodorante", "plural": "deodoranti", "gender": "m", "synonyms": ["deo"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Fensterabzieher", "plural": "Fensterabzieher", "gender": "m" },
+        "it": { "singular": "tergivetro", "plural": "tergivetri", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Medikamente", "plural": "Medikamente", "gender": "n" },
+        "it": { "singular": "medicinale", "plural": "medicinali", "gender": "m", "synonyms": ["farmaco"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Seifenschale", "plural": "Seifenschalen", "gender": "f" },
+        "it": { "singular": "portasapone", "plural": "portasapone", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kleiderhaken", "plural": "Kleiderhaken", "gender": "m" },
+        "it": { "singular": "appendiabiti", "plural": "appendiabiti", "gender": "m", "synonyms": ["gancio"] },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Abfluss", "plural": "Abflüsse", "gender": "m" },
+        "it": { "singular": "scarico", "plural": "scarichi", "gender": "m" },
+        "type": "nome", "room": "badezimmer",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Küche", "plural": "Küchen", "gender": "f" },
+        "it": { "singular": "cucina", "plural": "cucine", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kühlschrank", "plural": "Kühlschränke", "gender": "m" },
+        "it": { "singular": "frigorifero", "plural": "frigoriferi", "gender": "m", "synonyms": ["frigo"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Ofen", "plural": "Öfen", "gender": "m" },
+        "it": { "singular": "forno", "plural": "forni", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Mikrowelle", "plural": "Mikrowellen", "gender": "f" },
+        "it": { "singular": "forno a microonde", "plural": "forni a microonde", "gender": "m", "synonyms": ["microonde"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Spüle", "plural": "Spülen", "gender": "f" },
+        "it": { "singular": "lavello", "plural": "lavelli", "gender": "m", "synonyms": ["lavandino", "acquaio"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Teller", "plural": "Teller", "gender": "m" },
+        "it": { "singular": "piatto", "plural": "piatti", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Glas", "plural": "Gläser", "gender": "n" },
+        "it": { "singular": "bicchiere", "plural": "bicchieri", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Tasse", "plural": "Tassen", "gender": "f" },
+        "it": { "singular": "tazza", "plural": "tazze", "gender": "f", "synonyms": ["tazzina"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Besteck", "plural": "Bestecke", "gender": "n" },
+        "it": { "singular": "posata", "plural": "posate", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Messer", "plural": "Messer", "gender": "n" },
+        "it": { "singular": "coltello", "plural": "coltelli", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gabel", "plural": "Gabeln", "gender": "f" },
+        "it": { "singular": "forchetta", "plural": "forchette", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Löffel", "plural": "Löffel", "gender": "m" },
+        "it": { "singular": "cucchiaio", "plural": "cucchiai", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Teelöffel", "plural": "Teelöffel", "gender": "m" },
+        "it": { "singular": "cucchiaino", "plural": "cucchiaini", "gender": "m", "synonyms": ["cucchiaino da tè"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Topf", "plural": "Töpfe", "gender": "m" },
+        "it": { "singular": "pentola", "plural": "pentole", "gender": "f", "synonyms": ["tegame"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Pfanne", "plural": "Pfannen", "gender": "f" },
+        "it": { "singular": "padella", "plural": "padelle", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Spülmaschine", "plural": "Spülmaschinen", "gender": "f" },
+        "it": { "singular": "lavastoviglie", "plural": "lavastoviglie", "gender": "f", "synonyms": ["lavapiatti"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Müllsack", "plural": "Müllsäcke", "gender": "m" },
+        "it": { "singular": "sacco della spazzatura", "plural": "sacchi della spazzatura", "gender": "m", "synonyms": ["sacco dell'immondizia"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Mülleimer", "plural": "Mülleimer", "gender": "m" },
+        "it": { "singular": "bidone della spazzatura", "plural": "bidoni della spazzatura", "gender": "m", "synonyms": ["pattumiera", "cestino"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kochlöffel", "plural": "Kochlöffel", "gender": "m" },
+        "it": { "singular": "cucchiaio di legno", "plural": "cucchiai di legno", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Zange", "plural": "Zangen", "gender": "f" },
+        "it": { "singular": "pinza", "plural": "pinze", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Sieb", "plural": "Siebe", "gender": "n" },
+        "it": { "singular": "colino", "plural": "colini", "gender": "m", "synonyms": ["setaccio", "scolapasta"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schublade", "plural": "Schubladen", "gender": "f" },
+        "it": { "singular": "cassetto", "plural": "cassetti", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Abtropfgestell", "plural": "Abtropfgestelle", "gender": "n" },
+        "it": { "singular": "scolapiatti", "plural": "scolapiatti", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Putzmittel", "plural": "Putzmittel", "gender": "n" },
+        "it": { "singular": "detersivo", "plural": "detersivi", "gender": "m", "synonyms": ["prodotto per la pulizia"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Besen", "plural": "Besen", "gender": "m" },
+        "it": { "singular": "scopa", "plural": "scope", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Handfeger", "plural": "Handfeger", "gender": "m" },
+        "it": { "singular": "scopetta", "plural": "scopette", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kehrschaufel", "plural": "Kehrschaufeln", "gender": "f" },
+        "it": { "singular": "paletta", "plural": "palette", "gender": "f", "synonyms": ["paletta per la spazzatura"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Geschirrtuch", "plural": "Geschirrtücher", "gender": "n" },
+        "it": { "singular": "canovaccio", "plural": "canovacci", "gender": "m", "synonyms": ["strofinaccio"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Küchenpapier", "plural": "Küchenpapiere", "gender": "n" },
+        "it": { "singular": "carta da cucina", "plural": "carta da cucina", "gender": "f", "synonyms": ["scottex"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Frischhaltefolie", "plural": "Frischhaltefolien", "gender": "f" },
+        "it": { "singular": "pellicola trasparente", "plural": "pellicole trasparenti", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Alufolie", "plural": "Alufolien", "gender": "f" },
+        "it": { "singular": "foglio di alluminio", "plural": "fogli di alluminio", "gender": "m", "synonyms": ["carta stagnola", "stagnola"] },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Spülmittel", "plural": "Spülmittel", "gender": "n" },
+        "it": { "singular": "detersivo per piatti", "plural": "detersivi per piatti", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Dosenöffner", "plural": "Dosenöffner", "gender": "m" },
+        "it": { "singular": "apriscatole", "plural": "apriscatole", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Reibe", "plural": "Reiben", "gender": "f" },
+        "it": { "singular": "grattugia", "plural": "grattugie", "gender": "f" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schneidebrett", "plural": "Schneidebretter", "gender": "n" },
+        "it": { "singular": "tagliere", "plural": "taglieri", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kelle", "plural": "Kellen", "gender": "f" },
+        "it": { "singular": "mestolo", "plural": "mestoli", "gender": "m" },
+        "type": "nome", "room": "kuche",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Flur", "plural": "Flure", "gender": "m" },
+        "it": { "singular": "corridoio", "plural": "corridoi", "gender": "m", "synonyms": ["ingresso", "atrio"] },
+        "type": "nome", "room": "flur",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schuhschrank", "plural": "Schuhschränke", "gender": "m" },
+        "it": { "singular": "scarpiera", "plural": "scarpiere", "gender": "f" },
+        "type": "nome", "room": "flur",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schuh", "plural": "Schuhe", "gender": "m" },
+        "it": { "singular": "scarpa", "plural": "scarpe", "gender": "f" },
+        "type": "nome", "room": "flur",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schlüssel", "plural": "Schlüssel", "gender": "m" },
+        "it": { "singular": "chiave", "plural": "chiavi", "gender": "f" },
+        "type": "nome", "room": "flur",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schlüsselbund", "plural": "Schlüsselbünde", "gender": "m" },
+        "it": { "singular": "mazzo di chiavi", "plural": "mazzi di chiavi", "gender": "m" },
+        "type": "nome", "room": "flur","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schlüsselanhänger", "plural": "Schlüsselanhänger", "gender": "m" },
+        "it": { "singular": "portachiavi", "plural": "portachiavi", "gender": "m" },
+        "type": "nome", "room": "flur","stats": { "status": 1, "mistakes": 0, "correct": 0 }},
+    {
+        "de": { "singular": "Treppe", "plural": "Treppen", "gender": "f" },
+        "it": { "singular": "scala", "plural": "scale", "gender": "f", "synonyms": ["scinata"] },
+        "type": "nome", "room": "flur","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schirmständer", "plural": "Schirmständer", "gender": "m" },
+        "it": { "singular": "portaombrelli", "plural": "portaombrelli", "gender": "m" },
+        "type": "nome", "room": "flur","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Garderobe", "plural": "Garderoben", "gender": "f" },
+        "it": { "singular": "guardaroba", "plural": "guardaroba", "gender": "m", "synonyms": ["attaccapanni"] },
+        "type": "nome", "room": "flur","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Keller", "plural": "Keller", "gender": "m" },
+        "it": { "singular": "cantina", "plural": "cantine", "gender": "f", "synonyms": ["seminterrato"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Karton", "plural": "Kartons", "gender": "m" },
+        "it": { "singular": "scatolone", "plural": "scatoloni", "gender": "m", "synonyms": ["scatola di cartone"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Fahrrad", "plural": "Fahrräder", "gender": "n" },
+        "it": { "singular": "bicicletta", "plural": "biciclette", "gender": "f", "synonyms": ["bici"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Werkzeug", "plural": "Werkzeuge", "gender": "n" },
+        "it": { "singular": "attrezzo", "plural": "attrezzi", "gender": "m", "synonyms": ["utensile"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Werkzeugkasten", "plural": "Werkzeugkästen", "gender": "m" },
+        "it": { "singular": "cassetta degli attrezzi", "plural": "cassette degli attrezzi", "gender": "f" },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Staubsauger", "plural": "Staubsauger", "gender": "m" },
+        "it": { "singular": "aspirapolvere", "plural": "aspirapolvere", "gender": "f" },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Getränk", "plural": "Getränke", "gender": "n" },
+        "it": { "singular": "bevanda", "plural": "bevande", "gender": "f", "synonyms": ["bibita"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Vorrat", "plural": "Vorräte", "gender": "m" },
+        "it": { "singular": "scorta", "plural": "scorte", "gender": "f", "synonyms": ["provvista"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Waschmittel", "plural": "Waschmittel", "gender": "n" },
+        "it": { "singular": "detersivo per bucato", "plural": "detersivi per bucato", "gender": "m" },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Alkohol", "plural": "Alkohole", "gender": "m" },
+        "it": { "singular": "alcol", "plural": "alcol", "gender": "m" },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Tierfutter", "plural": "Tierfutter", "gender": "n" },
+        "it": { "singular": "cibo per animali", "plural": "cibo per animali", "gender": "m", "synonyms": ["mangime"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Katzentoilette", "plural": "Katzentoiletten", "gender": "f" },
+        "it": { "singular": "lettiera per gatti", "plural": "lettiere per gatti", "gender": "f", "synonyms": ["lettiera"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Bügeleisen", "plural": "Bügeleisen", "gender": "n" },
+        "it": { "singular": "ferro da stiro", "plural": "ferri da stiro", "gender": "m" },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Wäscheständer", "plural": "Wäscheständer", "gender": "m" },
+        "it": { "singular": "stendibiancheria", "plural": "stendibiancheria", "gender": "m", "synonyms": ["stendino"] },
+        "type": "nome", "room": "keller",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Garten", "plural": "Gärten", "gender": "m" },
+        "it": { "singular": "giardino", "plural": "giardini", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Baum", "plural": "Bäume", "gender": "m" },
+        "it": { "singular": "albero", "plural": "alberi", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Blume", "plural": "Blumen", "gender": "f" },
+        "it": { "singular": "fiore", "plural": "fiori", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gras", "plural": "Gräser", "gender": "n" },
+        "it": { "singular": "erba", "plural": "erbe", "gender": "f" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Rasen", "plural": "Rasen", "gender": "m" },
+        "it": { "singular": "prato", "plural": "prati", "gender": "m", "synonyms": ["manto erboso"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Hecke", "plural": "Hecken", "gender": "f" },
+        "it": { "singular": "siepe", "plural": "siepi", "gender": "f" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Terrasse", "plural": "Terrassen", "gender": "f" },
+        "it": { "singular": "terrazza", "plural": "terrazze", "gender": "f", "synonyms": ["terrazzo"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Grill", "plural": "Grills", "gender": "m" },
+        "it": { "singular": "barbecue", "plural": "barbecue", "gender": "m", "synonyms": ["griglia"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gartenstuhl", "plural": "Gartenstühle", "gender": "m" },
+        "it": { "singular": "sedia da giardino", "plural": "sedie da giardino", "gender": "f" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gartentisch", "plural": "Gartentische", "gender": "m" },
+        "it": { "singular": "tavolo da giardino", "plural": "tavoli da giardino", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gießkanne", "plural": "Gießkannen", "gender": "f" },
+        "it": { "singular": "annaffiatoio", "plural": "annaffiatoi", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schlauch", "plural": "Schläuche", "gender": "m" },
+        "it": { "singular": "tubo dell'acqua", "plural": "tubi dell'acqua", "gender": "m", "synonyms": ["canna dell'acqua"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gartengerät", "plural": "Gartengeräte", "gender": "n" },
+        "it": { "singular": "attrezzo da giardino", "plural": "attrezzi da giardino", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gewächshaus", "plural": "Gewächshäuser", "gender": "n" },
+        "it": { "singular": "serra", "plural": "serre", "gender": "f" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schwimmbad", "plural": "Schwimmbäder", "gender": "n" },
+        "it": { "singular": "piscina", "plural": "piscine", "gender": "f", "synonyms": ["pool"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Sonnenschirm", "plural": "Sonnenschirme", "gender": "m" },
+        "it": { "singular": "ombrellone", "plural": "ombrelloni", "gender": "m" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Zaun", "plural": "Zäune", "gender": "m" },
+        "it": { "singular": "recinzione", "plural": "recinzioni", "gender": "f", "synonyms": ["staccato"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gitter", "plural": "Gitter", "gender": "n" },
+        "it": { "singular": "inferriata", "plural": "inferriate", "gender": "f", "synonyms": ["grata"] },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Vogelhaus", "plural": "Vogelhäuser", "gender": "n" },
+        "it": { "singular": "casetta per uccelli", "plural": "casette per uccelli", "gender": "f" },
+        "type": "nome", "room": "garten",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Bienenhaus", "plural": "Bienenhäuser", "gender": "n" },
+        "it": { "singular": "alveare", "plural": "alveari", "gender": "m" },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Pflanze", "plural": "Pflanzen", "gender": "f" },
+        "it": { "singular": "pianta", "plural": "piante", "gender": "f" },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Rasenmäher", "plural": "Rasenmäher", "gender": "m" },
+        "it": { "singular": "tosaerba", "plural": "tosaerba", "gender": "m", "synonyms": ["tagliaerba"] },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Gartenbank", "plural": "Gartenbänke", "gender": "f" },
+        "it": { "singular": "panchina da giardino", "plural": "panchine da giardino", "gender": "f", "synonyms": ["panchina"] },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Blumentopf", "plural": "Blumentöpfe", "gender": "m" },
+        "it": { "singular": "vaso di fiori", "plural": "vasi di fiori", "gender": "m", "synonyms": ["vaso"] },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Solarlampe", "plural": "Solarlamper", "gender": "f" },
+        "it": { "singular": "lampada solare", "plural": "lampade solari", "gender": "f" },
+        "type": "nome", "room": "garten","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Balkon", "plural": "Balkone", "gender": "m" },
+        "it": { "singular": "balcone", "plural": "balconi", "gender": "m" },
+        "type": "nome", "room": "balkon","stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Balkon", "plural": "Balkone", "gender": "m" },
+        "it": { "singular": "balcone", "plural": "balconi", "gender": "m" },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Vorhang", "plural": "Vorhänge", "gender": "m" },
+        "it": { "singular": "tenda", "plural": "tende", "gender": "f", "synonyms": ["tendaggio"] },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Moskitonetz", "plural": "Moskitonetze", "gender": "n" },
+        "it": { "singular": "zanzariera", "plural": "zanzariere", "gender": "f" },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Dekoration", "plural": "Dekorationen", "gender": "f" },
+        "it": { "singular": "decorazione", "plural": "decorazioni", "gender": "f", "synonyms": ["addobbo"] },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Vase", "plural": "Vasen", "gender": "f" },
+        "it": { "singular": "vaso", "plural": "vasi", "gender": "m" },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Sofa", "plural": "Sofas", "gender": "n" },
+        "it": { "singular": "sofà", "plural": "sofà", "gender": "m", "synonyms": ["divano"] },
+        "type": "nome", "room": "balkon",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Garage", "plural": "Garagen", "gender": "f" },
+        "it": { "singular": "garage", "plural": "garage", "gender": "m", "synonyms": ["box"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Auto", "plural": "Autos", "gender": "n" },
+        "it": { "singular": "automobile", "plural": "automobili", "gender": "f", "synonyms": ["macchina", "auto"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Motorrad", "plural": "Motorräder", "gender": "n" },
+        "it": { "singular": "motocicletta", "plural": "motociclette", "gender": "f", "synonyms": ["moto"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Reifen", "plural": "Reifen", "gender": "m" },
+        "it": { "singular": "pneumatico", "plural": "pneumatici", "gender": "m", "synonyms": ["gomma"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Ersatzteil", "plural": "Ersatzteile", "gender": "n" },
+        "it": { "singular": "pezzo di ricambio", "plural": "pezzi di ricambio", "gender": "m", "synonyms": ["ricambio"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Eimer", "plural": "Eimer", "gender": "m" },
+        "it": { "singular": "secchio", "plural": "secchi", "gender": "m" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Fahrradöl", "plural": "Fahrradöle", "gender": "n" },
+        "it": { "singular": "olio per bicicletta", "plural": "oli per bicicletta", "gender": "m" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Motoröl", "plural": "Motoröle", "gender": "n" },
+        "it": { "singular": "olio motore", "plural": "oli motore", "gender": "m" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Rad", "plural": "Räder", "gender": "n" },
+        "it": { "singular": "ruota", "plural": "ruote", "gender": "f" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Motor", "plural": "Motoren", "gender": "m" },
+        "it": { "singular": "motore", "plural": "motori", "gender": "m" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Kette", "plural": "Ketten", "gender": "f" },
+        "it": { "singular": "catena", "plural": "catene", "gender": "f" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Helm", "plural": "Helme", "gender": "m" },
+        "it": { "singular": "casco", "plural": "caschi", "gender": "m" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Benzin", "plural": "Benzin", "gender": "n" },
+        "it": { "singular": "benzina", "plural": "benzine", "gender": "f" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Werkstatt", "plural": "Werkstätten", "gender": "f" },
+        "it": { "singular": "officina", "plural": "officine", "gender": "f", "synonyms": ["laboratorio"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Schraubenschlüssel", "plural": "Schraubenschlüssel", "gender": "m" },
+        "it": { "singular": "chiave inglese", "plural": "chiavi inglesi", "gender": "f" },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    },
+    {
+        "de": { "singular": "Abdeckung", "plural": "Abdeckungen", "gender": "f" },
+        "it": { "singular": "copertura", "plural": "coperture", "gender": "f", "synonyms": ["telo"] },
+        "type": "nome", "room": "garage",
+        "stats": { "status": 1, "mistakes": 0, "correct": 0 }
+    }
+]

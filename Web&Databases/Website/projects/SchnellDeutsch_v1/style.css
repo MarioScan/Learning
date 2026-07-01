@@ -1,0 +1,144 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; max-width: 650px; margin: 0 auto; color: #333; background-color: #fcfcfc; }
+.schermata { display: none; }
+.attiva { display: block; }
+h1 { color: #2c3e50; text-align: center; font-size: 2.5rem; margin-bottom: 30px; }
+h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; }
+button { padding: 12px 18px; margin: 6px; cursor: pointer; font-size: 1rem; border: none; border-radius: 6px; background-color: #3498db; color: white; font-weight: bold; transition: background 0.2s; }
+button:hover { background-color: #2980b9; }
+button.btn-menu { width: 100%; max-width: 400px; display: block; margin: 12px auto; padding: 15px; font-size: 1.1rem; }
+input[type="text"] { padding: 12px; font-size: 1.2rem; width: 100%; box-sizing: border-box; margin-bottom: 10px; border: 2px solid #bdc3c7; border-radius: 6px; }
+input[type="text"]:focus { border-color: #3498db; outline: none; }
+.card { border: 1px solid #e2e8f0; padding: 40px; border-radius: 12px; text-align: center; margin: 20px 0; font-size: 1.8rem; background: white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); font-weight: bold; color: #2d3748; }
+.feedback { font-weight: bold; margin: 15px 0; font-size: 1.3rem; text-align: center; }
+.corretto { color: #27ae60; }
+.sbagliato { color: #c0392b; }
+.opzioni-difficolta { background: #f7fafc; padding: 15px; border-radius: 8px; margin: 15px 0; border: 1px solid #edf2f7; }
+.info-extra { font-size: 1.1rem; color: #718096; margin-top: 12px; font-style: italic; }
+
+/* Tastiera caratteri tedeschi */
+.tastiera-tedesca { margin: 15px 0; padding: 10px; background: #f1f5f9; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }
+.btn-char { background-color: #e2e8f0; color: #334155; min-width: 40px; padding: 8px 12px; margin: 3px; font-size: 1.1rem; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+.btn-char:hover { background-color: #cbd5e1; }
+
+/* Contatore Streak e Animazione */
+.streak-container { font-weight: bold; font-size: 1.2rem; margin-top: 25px; text-align: center; transition: color 0.3s ease; }
+.streak-attiva { color: #27ae60; }
+.streak-rotta { color: #c0392b; animation: shake-grow 0.4s ease-in-out; }
+@keyframes shake-grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.keyboard-hint { font-size: 0.85rem; color: #a0aec0; margin-top: 5px; display: block; text-align: center; }
+.sezione-titolo { margin-top: 25px; font-weight: bold; font-size: 1.2rem; color: #4a5568; border-left: 4px solid #3498db; padding-left: 8px; }
+
+/* Dashboard Statistiche */
+.stats-dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.stats-box { padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.box-top { background-color: #ebfbee; border: 1px solid #c3fae8; color: #2b8a3e; }
+.box-worst { background-color: #fff5f5; border: 1px solid #ffe3e3; color: #c92a2a; }
+.stats-box h3 { margin-top: 0; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 5px; font-size: 1.1rem; }
+.stats-box p { margin: 6px 0; font-size: 0.95rem; }
+.lista-generale-stats { margin-top: 25px; background: white; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; }
+.riga-stat { padding: 8px; border-bottom: 1px solid #edf2f7; font-size: 0.95rem; }
+.riga-stat:last-child { border-bottom: none; }
+
+/* Game Over Card */
+.game-over-card { background-color: #fff5f5; border: 2px solid #ffe3e3; padding: 40px; border-radius: 12px; text-align: center; margin: 20px 0; box-shadow: 0 4px 10px rgba(192, 57, 43, 0.1); }
+.game-over-title { font-size: 2.2rem; color: #c0392b; font-weight: bold; margin-bottom: 10px; }
+.game-over-score { font-size: 1.5rem; margin-bottom: 25px; color: #4a5568; }
+
+/* Nuova Sezione Learning Mode */
+.btn-stanza { width: 100%; text-align: left; background-color: #fff; color: #2c3e50; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin: 6px 0; padding: 14px; font-size: 1.1rem; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+.btn-stanza:hover { background-color: #f8fafc; border-color: #94a3b8; }
+.area-box-learning { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-top: 20px; }
+.titolo-area-learning { font-size: 1.4rem; font-weight: bold; color: #1e293b; margin-bottom: 15px; background: #2bca77; padding: 8px 12px; border-radius: 6px; }
+.elemento-vocabolo-learning { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 1.1rem; }
+.elemento-vocabolo-learning:last-child { border-bottom: none; }
+.sinonimi-learning { font-size: 0.9rem; color: #64748b; font-style: italic; display: block; margin-top: 3px; }
+
+/* Layout a 3 colonne per la sezione Challenge */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.challenge-col {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.challenge-col h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4a5568;
+    font-size: 1rem;
+    border-bottom: 1px dashed #cbd5e1;
+    padding-bottom: 5px;
+}
+
+/* Forza i pulsanti all'interno delle colonne ad occupare tutta la larghezza disponibile */
+button.btn-grid {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 4px 0;
+    padding: 10px 5px;
+    font-size: 0.9rem;
+}
+
+
+#app-wrapper {
+    flex: 1 0 auto; 
+    width: 100%;
+}
+
+#main-footer {
+    flex-shrink: 0;
+    background-color: transparent; /* Nessun blocco di colore pesante */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem; /* Molto piccolo e discreto */
+    width: 100%;
+}
+
+/* Testo e link si fondono con lo sfondo dell'app */
+#main-footer p, #main-footer a {
+    color: #a0aec0; /* Un grigio neutro che non attira l'attenzione */
+    text-decoration: none;
+}
+
+#main-footer a {
+    font-weight: 500;
+    border-bottom: 1px dashed #a0aec0; /* Sottile linea tratteggiata sotto il nome */
+    transition: all 0.2s ease;
+}
+
+/* Si illumina solo se l'utente ci passa sopra */
+#main-footer a:hover {
+    color: #4a5568; /* Diventa più scuro/leggibile (o bianco #ffffff se usi un tema scuro) */
+    border-bottom: 1px solid currentColor;
+}
+
+#lista-stanze-verticale-learning {
+    display: flex;
+    flex-direction: column; /* Forza i bottoni a mettersi uno sotto l'altro */
+    align-items: center;    /* Centra i bottoni orizzontalmente nella pagina */
+    gap: 8px;              /* Aggiunge uno spazio verticale uniforme tra i bottoni */
+    margin-top: 5px;       /* Distanzia la lista dal bottone superiore */
+    width: 100%;
+}
+
+/* Stile per rendere i bottoni uniformi (opzionale ma consigliato) */
+.btn-menu-stanza {
+    width: 100%;
+    max-width: 400px;       /* Impedisce ai bottoni di diventare troppo larghi su PC */
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
