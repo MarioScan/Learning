@@ -1,2 +1,3 @@
 # Learning
-Study material, exercises and exam practice in different programming languages. 
+Welcome.
+Here you will find my personal projects, study material and exercises in different programming languages. 
